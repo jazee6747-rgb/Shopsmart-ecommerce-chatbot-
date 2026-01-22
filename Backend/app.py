@@ -17,7 +17,7 @@ def chat():
     if "return" in msg:
         return jsonify({"reply": "We offer a 7-day return policy."})
 
-    return jsonify({"reply": "I only answer shopping-related questions 🛒"})
+    return jsonify({"reply": "I only answer shopping-related questions."})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0",port=10000)
